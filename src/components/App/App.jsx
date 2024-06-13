@@ -3,12 +3,12 @@ import user from 'data/user.json';
 import data from 'data/data.json';
 import friends from 'data/friends.json';
 import transactions from 'data/transactions.json';
-import { Profile } from './Profile';
-import { TransactionHistory } from './TransactionHistory';
-import { FriendList } from './FriendList';
-import { Statistics } from './Statistics';
+import { Profile } from '../Profile/Profile';
+import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
+import { FriendList } from '../FriendList/FriendList';
+import { Statistics } from '../Statistics/Statistics';
 import { Fragment } from 'react';
-import { Header } from './Header';
+import { Header } from '../Header/Header';
 
 export const App = () => {
   return (
