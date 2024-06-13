@@ -9,13 +9,15 @@ import { FriendList } from '../FriendList/FriendList';
 import { Statistics } from '../Statistics/Statistics';
 import { Fragment } from 'react';
 import { Header } from '../Header/Header';
+import { Home } from '../Home/Home';
 
 export const App = () => {
   return (
     <Fragment>
       <Header />
       <Routes>
-        <Route path="/goit-react-hw-01" element={<Profile
+        <Route path="/goit-react-hw-01/" element={<Home />}/>
+        <Route path="/profile" element={<Profile
           username={user.username}
           tag={user.tag}
           location={user.location}

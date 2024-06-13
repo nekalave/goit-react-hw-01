@@ -4,7 +4,10 @@ import css from './Header.module.css';
 export const Header = () => {
   return (
     <nav className={css.navList}>
-      <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem} to='/goit-react-hw-01'>
+      <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem} to='/goit-react-hw-01/'>
+        Home
+      </NavLink>
+      <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem} to='/profile'>
         Profile
       </NavLink>
       <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem} to='/statistic1'>
