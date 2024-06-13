@@ -1,19 +1,19 @@
-.transactionSection{
+.transactionSection {
   background-color: lightgrey;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.transactionHistory{
+.transactionHistory {
   width: 600px;
   margin: auto;
 }
 
-.transactionTh{
+.transactionTh {
   background-color: #00bcd4;
 }
 
-.transactionTBody{
+.transactionTBody {
   text-align: center;
   background-color: white;
 }
