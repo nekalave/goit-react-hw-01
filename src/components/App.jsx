@@ -1,16 +1,32 @@
+import { Routes, Route } from "react-router-dom";
+import user from 'data/user.json';
+import data from 'data/data.json';
+import friends from 'data/friends.json';
+import transactions from 'data/transactions.json';
+import { Profile } from './Profile';
+import { TransactionHistory } from './TransactionHistory';
+import { FriendList } from './FriendList';
+import { Statistics } from './Statistics';
+import { Fragment } from 'react';
+import { Header } from './Header';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Fragment>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Profile
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+        />}/>
+        <Route path="/statistic1" element={<Statistics title="Upload stats" stats={data} />}/>
+        <Route path="/statistic2" element={<Statistics stats={data} />}/>
+        <Route path="/friendlist" element={<FriendList friends={friends} />}/>
+        <Route path="/transactionhistory" element={<TransactionHistory items={transactions} />}/>
+      </Routes>
+    </Fragment>
   );
 };

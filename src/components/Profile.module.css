@@ -1,0 +1,81 @@
+.profileSection {
+  background-color: lightgrey;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 210px;
+  height: 250px;
+  margin: auto;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.20), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.avatar {
+  width: 50px;
+  border-radius: 30px;
+  background-color: white;
+
+}
+
+.name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tag {
+  color: #757575;
+  font-size: 10px;
+}
+
+.location {
+  color: #757575;
+  font-size: 10px;
+}
+
+.statsList {
+  display: flex;
+  width: 210px;
+  height: 50px;
+  background-color: rgb(242, 242, 242);
+  border-top: 0.5px solid rgb(128, 128, 128);
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 0 0 4px 4px;
+}
+
+.statsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+}
+
+.statsItem:nth-child(2) {
+  border-left: 0.5px solid rgb(128, 128, 128);
+  border-right: 0.5px solid rgb(128, 128, 128);
+}
+
+.label {
+  color: #757575;
+  font-size: 10px;
+}
+
+.quantity {
+  font-size: 12px;
+  font-weight: bold;
+}
