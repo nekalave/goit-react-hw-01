@@ -15,7 +15,7 @@ export const App = () => {
     <Fragment>
       <Header />
       <Routes>
-        <Route path="/" element={<Profile
+        <Route path="/goit-react-hw-01" element={<Profile
           username={user.username}
           tag={user.tag}
           location={user.location}

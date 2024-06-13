@@ -1,22 +1,23 @@
 import { NavLink } from 'react-router-dom';
-import css from "./Header.module.css";
+import css from './Header.module.css';
 
 export const Header = () => {
   return (
     <nav className={css.navList}>
-      <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem} to="/" >
+      <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem} to='/goit-react-hw-01'>
         Profile
       </NavLink>
-      <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem} to="/statistic1">
+      <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem} to='/statistic1'>
         Statistics-1
       </NavLink>
-      <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem} to="/statistic2">
+      <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem} to='/statistic2'>
         Statistics-2
       </NavLink>
-      <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem} to="/friendlist">
+      <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem} to='/friendlist'>
         FriendList
       </NavLink>
-      <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem} to="/transactionhistory">
+      <NavLink className={({ isActive }) => isActive ? `${css.navItem} ${css.active}` : css.navItem}
+               to='/transactionhistory'>
         TransactionHistory
       </NavLink>
     </nav>
